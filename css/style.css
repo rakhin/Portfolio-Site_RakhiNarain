@@ -1,0 +1,83 @@
+/*
+    Colors Used:
+        Primary Color(s):
+            Light Green - #92BD91
+            White       - #FFFFFF
+        Secondary Color:
+*/
+
+body{
+    background-color: #FFFFFF; /* white background */
+    color:#000000;  /* black text */
+
+    font-family:'Poppins', sans-serif;
+    font-size: 17px; 
+    font-weight: normal; 
+    line-height: normal; 
+
+}
+
+img{
+    width: 100%; 
+}
+
+a:hover,
+a:focus{
+    color: #007c3e;
+    text-decoration: none; 
+}
+
+a:active{
+    color: #007c3e;
+    text-decoration: none;
+}
+
+a:visited{
+    color: #5E1606;
+}
+
+.button{
+    display: inline-block;
+    background-color: #ff7f50;
+    color:#FFFFFF;
+
+    font-weight: 400; 
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid; 
+    transition: .2s opacity; 
+}
+
+
+.button:hover{
+    opacity: .8;
+    text-decoration: none;
+}
+
+.button:active{
+    opacity: .8;
+    text-decoration: none;
+}
+
+.button.contact{
+    background-color: transparent;
+    color:#007c3e; 
+    text-transform: uppercase;
+    border: 2px solid #007c3e; 
+}
+
+.button.contact:hover{
+    background-color: #007c3e;
+    color:#FFFFFF;
+}
+
+.button.resume{
+    background-color: steelblue;
+    color:#FFFFFF; 
+    border: 2px solid
+}
+
+.button.resume:hover{
+    background-color: transparent;
+    color: steelblue; 
+}
