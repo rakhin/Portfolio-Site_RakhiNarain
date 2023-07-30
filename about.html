@@ -14,22 +14,26 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">    </head>
     
-    <body>
-        <header>
-            <div>
-                <img src="img/logo.png" width="300" height="104" alt="Rakhi Narain">
+        <body>
+            <header>
+              <div class = "container">
+                <div class="logo">
+                <img src="img/logo.png" width="300" height="104" alt="Rakhi Narain" />
+                </div>
                 <nav>
-                    <ul>
+                  <ul class="nav">
                     <li><a href="index.html">Work</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="#">Contact</a></li>
-                    </ul>
+                    <li><a href="olivepage.html"> Olive Project</a></li>
+                  </ul>
                 </nav>
-            </div>
-        </header>
+               </div>
+            </header>
    
     <main>
-        <div>
+        <div class="container">
+            <div id="about">
             <div>
                 <h1>About</h1>
             </div>
@@ -41,6 +45,7 @@
                         <img src="img/large/me_large.png">
                     </picture>
                 </div>
+            </div>
             
                 <div>
                     <h2>
@@ -53,10 +58,13 @@
 
                     <!---Link Resume Opened in a new window--->
                     <a href="files/resume_rakhinarain2022.pdf" target="_blank" class="button resume">Resume</a>
-
+                </div>
+                </div>
+                <div id="Skills">
+                    <div class="container">
                     <h2> Skills and Tools </h2>
                         <div>
-                            <div>
+                            <div class="row">
                                 <h3>Skills</h3>
                                 <ul>
                                     <li>UX / UI Design</li>
@@ -78,39 +86,56 @@
                                 </ul>
                             </div>
                         </div>
+                    </div>
                 </div>
+                
                 
             </div>
         </div>
     </main>
 
     <footer>
-        <div>
-            <h2> Get in Touch</h2>
-        <p> Like my work? Interested in hiring me for your projects? You can contact me using the below.</p>
-        <div> <!---Linked Telephone number---> 
-            <p>
-                Phone Number: <a href="tel:+10000000000">(000)-000-0000</a>
-            </p>
+        <div class="container">
+          <h2>Get in Touch</h2>
+          <p>
+            Like my work? Interested in hiring me for your projects? You can
+            contact me using the below.
+          </p>
+          <div>
+            <!---Linked Telephone number--->
+            <p>Phone Number: <a href="tel:+10000000000">(000)-000-0000</a></p>
             <div>
-                <a href="mailto:rakhi.narain.98@gmail.com" class="button contact">Email Me!</a>
-            </div>  
-        </div>
-       <!---Icon Placeholders in Hyperlinks--->
-       <div>
+              <a href="mailto:rakhi.narain.98@gmail.com" class="button contact">Email Me!</a>
+            </div>
+          </div>
+          <!---Icon Placeholders in Hyperlinks--->
+          <div>
             <!---Replace placeholder images with svgs--->
-            <a href="https://www.linkedin.com/in/rakhi-narain982/" target="_blank">
-                <img src="img/Originals/linkedin-icon.svg" alt="linkedin logo" width="32" height="32">
+            <a
+              href="https://www.linkedin.com/in/rakhi-narain982/"
+              target="_blank"
+            >
+              <img
+                src="img/Originals/linkedin-icon.svg"
+                alt="linkedin logo"
+                width="32"
+                height="32"
+              />
             </a>
             <a href="https://twitter.com/samusnotmetroid" target="blank">
-                <img src="img/Originals/twitter-icon.svg" alt="twitter logo" width="32" height="32">
+              <img
+                src="img/Originals/twitter-icon.svg"
+                alt="twitter logo"
+                width="32"
+                height="32"
+              />
             </a>
-
-       </div>
-       <!---Copyright Notice--->
-            <p>Copyright Rakhi Narain 2023</p>
+          </div>
+          <!---Copyright Notice--->
+          <div class="copyright">
+          <p>Copyright Rakhi Narain 2023</p>
+          </div>
         </div>
-    </footer>
-
+      </footer>
     </body>
-</html>
+  </html>
