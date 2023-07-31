@@ -6,6 +6,10 @@
         Secondary Color:
 */
 
+* {
+    box-sizing: border-box; 
+}
+
 body{
     background-color: #FFFFFF; /* white background */
     color:#000000;  /* black text */
@@ -21,14 +25,14 @@ body{
 header{
     background-color: slategray;
     border-bottom:3px solid slateblue; 
-    padding: 10px, 5px, 15px, 5px; 
-    margin: 10px;
+    padding: 0px;
+    margin: 0px;
     position: relative;
 }
 
 .logo{
     max-width: 300px;
-    display: block;
+    display: inline-block;
     padding-top: 10px;
     margin-left: auto;
     margin-right: auto;
@@ -42,7 +46,7 @@ nav > ul{
 
 nav > ul > li{
     display: inline-block; 
-    padding: 20px; 
+    padding: 10px; 
 }
 
 nav > ul > li > a{
@@ -69,13 +73,9 @@ nav > ul > li > a:visited{
 }
 
 #Projects img{
-    max-width: 200px;
+    max-width: 300px;
     display: block;
     float: left; 
-}
-
-#Olive{
-
 }
 
 #about{
@@ -87,6 +87,10 @@ nav > ul > li > a:visited{
 
 #about img{
     max-width: 700px;
+}
+
+#about h3{
+    margin-top: 0;
 }
 
 h2{
@@ -170,6 +174,7 @@ footer{
 }
 
 .container{
+
     padding: 0px 15px;
 }
 
@@ -179,6 +184,12 @@ footer{
 
 .row{
     margin: 25px 0 ; 
+}
+
+.row::after{
+    content: "";
+    clear: both; 
+    display: table;
 }
 
 ul.aboutList{
@@ -204,4 +215,50 @@ text-align: left;
 
 #Olive h1{
     text-align: center;
+}
+
+@media only screen and (min-width:640px) {
+    body{
+        font-size: 18px;
+    }
+    
+    header{
+        text-align: unset;
+        display: block;
+    }
+
+
+    nav{
+        width:auto; 
+        float: right;
+        margin-top: 8px;
+        
+    }
+
+    #hero span{
+        display: block;
+        text-align: center; 
+    }
+    
+    [class*="col-"]{
+        width: 50%;
+        float: left; 
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .col-7{
+        width: 60%;
+    }
+    .col-5{
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .container{
+        max-width:1200px; 
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

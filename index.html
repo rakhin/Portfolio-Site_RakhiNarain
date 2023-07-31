@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+  <head> 
     <meta charset="utf-8" />
     <meta name="author" content="Rakhi Narain" />
     <meta
       name="description"
       content="Rakhi Narain Design Portfolio UX Game Designer"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
-
+  
     <title>Rakhi Narain Design</title>
 
     <!---CSS information and text-styling--->
@@ -15,89 +15,79 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">  </head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">  
+  </head>
 
-  <!---Replace all placeholders with actual images--->
   <body>
     <header>
       <div class = "container">
         <div class="logo">
-        <img src="img/logo.png" width="300" height="104" alt="Rakhi Narain" />
+            <img src="img/logo.png" alt="Rakhi Narain" />
         </div>
         <nav>
           <ul class="nav">
             <li><a href="index.html">Work</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="#">Contact</a></li>
-            <li><a href="olivepage.html"> Olive Project</a></li>
+           <!---<li><a href="olivepage.html"> Olive</a></li>---> 
           </ul>
         </nav>
        </div>
     </header>
 
-    <main>
+  <main>
       <div>
         <div id="hero"> 
           <div class="container"> <!----Hero Section-->
-         <h1>
+            <span><h1>
            Hi, My Name is Rakhi
-            <span
-             ><br />I am a Game Designer and a UX Designer based in
-             California</span>
+            <br />I am a Game Designer and a UX Designer based in California
           </h1>
           <p>
           And I am also a person who does way too many things. Seriously, I couldn't
           fit them all here.
         </p>
+            </span>
         </div>
         </div>
 
         <div>
           <div id="Projects">
             <div class="container">
-            <div>
-              <h2>My Work / Projects</h2>
-              <div class="row">
+              <div>
+                <h2>My Work / Projects</h2>
+                  <div class="row">
+                    <div class="col-md-6 col-lg-7">
+                        <!---1 project--->
+                        <!---Picture Element--->
+                        <picture>
+                           <!---image for mobile--->
+                            <source srcset="img/small/olivelogo_small.png" media="(max-width:767px)"/>
+                            <!---image for larger screens--->
+                            <img src="img/large/olivelogo_large.png" alt="cover image of Olive"/>
+                        </picture>
+                    </div>
+                    
+                        <div class="col-md-6 col-lg-5">
+                          <!--Project Title--->
+                          <h3>Olive: Health and Wellness</h3>
+
+                          <!---Short Intro--->
+                          <p>
+                            The personal health tracking app to keep you on top of your
+                            health, connect you to your doctors with ease, and help you
+                            develop better habits, designed for mobile devices.
+                          </p>
+
+                          <!--Hyperlink--->
+                          <a href="olivepage.html" class="button">Click Here to See the Project</a>
+                        </div>
+                  </div>
               </div>
-            </div>
-            <div>
-              <!---1 project--->
-              <!---Picture Element--->
-              <picture>
-                <!---image for mobile--->
-                <source
-                  srcset="img/small/olivelogo_small.png"
-                  media="(max-width:767px)"
-                />
-
-                <!---image for larger screens--->
-                
-                <img
-                  src="img/large/olivelogo_large.png"
-                  alt="cover image of Olive"
-                />
-              </picture>
-            </div>
-          </div>
-          </div>
-
-            <div>
-              <!--Project Title--->
-              <h3>Olive: Health and Wellness</h3>
-
-              <!---Short Intro--->
-              <p>
-                The personal health tracking app to keep you on top of your
-                health, connect you to your doctors with ease, and help you
-                develop better habits, designed for mobile devices.
-              </p>
-              <!--Hyperlink--->
-              <a href="olivepage.html" class="button">Click Here to See the Project</a>
             </div>
           </div>
         </div>
-      </div>
-    </main>
+  </main>
 
     <footer>
       <div class="container">
