@@ -217,6 +217,50 @@ text-align: left;
     text-align: center;
 }
 
+#svg-animation{
+    width: 100%;
+    max-width: 100%; 
+    height: auto; 
+}
+
+@keyframes color-change{
+    from{fill:#edc655;}
+    to{fill: red;}
+}
+
+@keyframes cloud-move {
+    from{transform: translate(0, 50px);}
+    to{transform: translate(200px,50px);}
+}
+
+@keyframes cloud-move-reverse {
+    from{transform: translate(446px, 48px);}
+    to{transform: translate(100px,48px);}
+}
+
+@keyframes cloud-scale {
+    from{transform: scale(1);}
+    to{transform: scale(2);}
+}
+
+
+.sun{
+    animation: 4s color-change infinite alternate linear;
+    
+}
+
+.cloud-front{
+    animation: 10s cloud-scale infinite alternate linear;
+}
+
+.cloud-back{
+    animation: 20s cloud-move-reverse infinite alternate linear; 
+}
+
+hr.solid{
+    border-top: 3px solid #bbb;
+}
+
 @media only screen and (min-width:640px) {
     body{
         font-size: 18px;
