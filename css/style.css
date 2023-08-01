@@ -74,8 +74,7 @@ nav > ul > li > a:visited{
 
 #Projects img{
     max-width: 300px;
-    display: block;
-    float: left; 
+    display: block; 
 }
 
 #about{
@@ -285,16 +284,19 @@ hr.solid{
     }
     
     [class*="col-"]{
-        width: 50%;
         float: left; 
+    }
+
+    .col-md-6{
+        width:50%; 
     }
 }
 
 @media only screen and (min-width: 1024px) {
-    .col-7{
+    .col-lg-7{
         width: 60%;
     }
-    .col-5{
+    .col-lg-5{
         width: 40%;
     }
 }
