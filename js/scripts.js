@@ -1,6 +1,4 @@
-console.log("Hello World :)"); 
-
-function menuToggle(){
+function menuToggle(){ 
     var x = document.getElementById('myNavToggle'); 
 
     if(x.className === 'navToggle'){
