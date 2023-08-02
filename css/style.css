@@ -30,8 +30,9 @@ header{
     position: relative;
 }
 
+
 .logo{
-    max-width: 300px;
+    max-width: 150px;
     display: inline-block;
     padding-top: 10px;
     margin-left: auto;
@@ -40,14 +41,10 @@ header{
 
 nav > ul{
     list-style-type: none;
-    text-align: center;
     padding: 0; 
+    margin:0; 
 }
 
-nav > ul > li{
-    display: inline-block; 
-    padding: 10px; 
-}
 
 nav > ul > li > a{
     padding: 0, 100px;
@@ -63,6 +60,40 @@ nav > ul > li > a:visited{
     text-transform: uppercase;
     font-weight:400;
     color:#000000; 
+}
+
+.navToggle li:not(:last-child){
+    display: none; 
+}
+
+.navToggle, .navToggle.responsive{
+    position: relative;
+}
+
+
+.navToggle.responsive nav{
+    background-color: #FFFFFF;
+    padding: 50px 10px 0; 
+    margin-top: 15px;
+    border: 1px solid rgba(255, 127, 80, 0.5);
+}
+
+.navToggle.responsive li {
+    display:block; 
+    padding: 10px 10px; 
+    border-top:1px solid rgba(255,127,80,0.5); 
+}
+
+.navToggle.responsive li:last-child{
+    padding: 0 0 10px; 
+}
+
+.navToggle li .icon{
+    position:absolute; 
+    right:10px; 
+    top:20px; 
+    font-size: 20px;
+    padding-right: 0;
 }
 
 #hero{
@@ -222,6 +253,8 @@ text-align: left;
     height: auto; 
 }
 
+
+
 @keyframes color-change{
     from{fill:#edc655;}
     to{fill: red;}
@@ -290,6 +323,33 @@ hr.solid{
     .col-md-6{
         width:50%; 
     }
+
+
+}
+
+@media only screen and (min-width: 641px){
+    .logo{
+        max-width: 300px;
+    }
+
+    nav > ul{
+        margin: 1em 0; 
+    }
+
+    nav > ul > li{
+        display: inline-block; 
+        padding: 10px; 
+    }
+
+    .navToggle li:not(:last-child){
+        display: inline-block; 
+    }
+
+    .navToggle li:last-child{
+        display: none; 
+    }
+
+    
 }
 
 @media only screen and (min-width: 1024px) {
